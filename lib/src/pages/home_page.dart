@@ -42,14 +42,14 @@ void initState(){
           builder: (BuildContext context, Widget child, MainModel model) {
             model.fetchProduks();
             List<Produk> produks=model.produks;
-            return Column(
-              children: model.produks.map((Produk produk){
-                return _buildProdukItems(
-                  produk.name.toString(),
-                );
-              }
-              )
-            );
+            // return Column(
+            //   children: model.produks.map((Produk produk){
+            //     return _buildProdukItems(
+            //       produk.name.toString(),
+            //     );
+            //   }
+            //   )
+            // );
           },
           ),
         //DaftarProduk(),
